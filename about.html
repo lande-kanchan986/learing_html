@@ -6,6 +6,64 @@
         <meta name="viewport" content="width=device-width,initial,scale=1.0">
         <title>about page</title>
     </head>
+    <style>
+        .para1 {
+            border: 3px solid brown;
+            padding: 20px;
+        }
+
+        .para2 {
+            border: 3px solid brown;
+            padding: 20px;
+        }
+
+        h1 {
+            color: green !important;
+        }
+
+        .f_family2 {
+            font-family: cursive;
+        }
+
+        .f_family2 {
+            font-family: cursive;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 20px;
+        }
+
+        p::first-line {
+            color: blue;
+        }
+
+        ::selection {
+            color: white;
+            background-color: black;
+        }
+
+        .t_shadow {
+            color: darkmagenta;
+            font-size: 30px;
+            text-shadow: 5px 7px 5px red;
+
+        }
+
+        .b_shadow {
+            box-shadow: 10px blue;
+        }
+
+        .img_ratio {
+            width: 200;
+            height: 150;
+        }
+
+        .d_shadow {
+            filter: drop-shadow((3px 4px 4px)blue)
+        }
+    </style>
+
 
     <body>
         <nav>
@@ -18,15 +76,36 @@
             <a href="https://www.youtube.com/" target="_blank">youtube</a>
 
         </nav>
-        <marquee bgcolor=pink direction="right"  height="70px"/>
-            <h1>This is my about page</h1>
+        <marquee bgcolor=brown direction="right" height="70px" />
+        <h1 class="t_shadow">This is my about page</h1>
         </marquee>
-        <img src="images/hotelname.jpeg" alt="hotelname">
-        <p>Hotel services include a wide range of offerings to enhance the guest experience, from basic accommodation and housekeeping to amenities like dining, Wi-Fi, concierge, and specialized services like spas and laundry. These services aim to provide comfort, convenience, and a positive stay, and can be both tangible (like in-room amenities) and intangible</p>
 
-        <marquee bgcolor=pink direction="left" width="400px" height="150px">
+        <style>
+            h3 {
+                font-size: 50px;
+                color: yellow;
+            }
+        </style>
+        <body>
+              <div class="col-md-4 bg-danger">
+            <h3>Welcome To Hotelor </h3>
+            <p class="f_family2 para1">Hotel services encompass lodging, food/beverage, housekeeping, guest relations, and amenities like Wi-Fi,
+                aiming for comfort and convenience,
+                 with common offerings including room service, concierge,
+                  laundry,
+                fitness centers, parking, event spaces, 
+                and personalized experiences like guided tours or cooking
+                classes, all managed by departments like Front Office,
+                 F&B, and Housekeeping</p>
+
+
+        </body>
+
+        <marquee  direction="left" width="500px" height="70px">
         </marquee>
-        <img src="images/hotel2.jpg" alt="hotel2">
-        <p>Hotel counter services, often referred to as the front desk or front office, are the primary point of contact for guests and are responsible for a wide array of guest-facing and administrative duties throughout a guest's stay, from arrival to departure. The front desk staff are the "face" of the hotel, setting the tone for the guest experience. </p>
+        <div class="row"></div>
+        <img src="images/hotel2.jpg" alt="hotel2" , data-bs-toggle="modal">
+
     </body>
+
     </html>

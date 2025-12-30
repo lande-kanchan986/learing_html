@@ -1,11 +1,36 @@
 <DOCTYPE html>
     <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial,scale=1.0">
         <title>product page</title>
     </head>
+    <style>
+        h1 {
+            color: green !important;
+        }
+
+        .t_shadow {
+            color: darkmagenta;
+            font-size: 30px;
+            text-shadow: 5px 7px 5px red;
+
+        }
+
+        .b_shadow {
+
+            box-shadow: 10px blue;
+        }
+
+        .img_ratio {
+            width: 200;
+            height: 150;
+        }
+
+        .d_shadow {
+            filter: drop-shadow((3px 4px 4px)blue)
+        }
+    </style>
 
     <body>
         <nav>
@@ -17,10 +42,43 @@
             <a href="https://www.facebook.com/" target="_blank">facebook</a>
             <a href="https://www.youtube.com/" target="_blank">youtube</a>
 
+
         </nav>
-        <marquee bgcolor=pink direction="right" height="70px">
-          <h1>This is product page</h1>  
+        <marquee bgcolor=brown direction="right" height="70px">
+            <h1 class="t_shadow">This is product page</h1>
         </marquee>
-        <img src="images/hotelmenu2.jpeg" alt="hotelmenu2"/>
-        </body>
-        </html>
+        <section class="mb-3">
+            <div class="cointainer-fluid">
+                <h1>food Gallary</h1>
+                <div class="row">
+                    <div class="row col-md-3">
+                        <img src="images/chikan.jpg" class="img-fluid md-2" />
+                    </div><br>
+                    <div class="row col-md-3">
+                        <img src="images/pasta.jpg" class="img-fluid md-2" />
+                    </div><br>
+                    <div class="row col-md-3">
+                        <img src="images/pizza.jpg" class="img-fluid md-2" />
+                    </div><br>
+                    <div class="row col-md-3">
+                        <img src="images/dhosa.jpg" class="img-fluid md-2" />
+                    </div>
+                    <div class="row col-md-3">
+                        <img src="images/flying-9940383_640.jpg" class="img-fluid md-2" />
+                    </div>
+                    <div class="row col-md-3">
+                        <img src="images/flying-9940383_640.jpg" class="img-fluid md-2" />
+                    </div>
+                    <div class="row col-md-3">
+                        <img src="images/flying-9940383_640.jpg" class="img-fluid md-2" />
+                    </div>
+                    <div class="row col-md-3">
+                        <img src="images/flying-9940383_640.jpg" class="img-fluid md-2" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </body>
+    </html>

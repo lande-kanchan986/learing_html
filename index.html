@@ -5,12 +5,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial,scale=1.0">
         <title>index page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
+    <!-- Header Start -->
+    <style>
+        .para1 {
+            border: 3px solid brown;
+            padding: 20px;
+        }
 
-    <body>
-        <DOCTYPE html>
-            </head>
+        h1 {
+            color: green !important;
+        }
 
+        .f_family2 {
+            font-family: cursive;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 20px;
+        }
+
+        p::first-line {
+            color: blue;
+        }
+
+        ::selection {
+            color: white;
+            background-color: black;
+        }
+
+        .t_shadow {
+            color: darkmagenta;
+            font-size: 30px;
+            text-shadow: 5px 7px 5px red;
+
+        }
+
+        .b_shadow {
+            box-shadow: 10px blue;
+        }
+
+        .img_ratio {
+            width: 200;
+            height: 150;
+        }
+
+        .d_shadow {
+            filter: drop-shadow((3px 4px 4px)blue)
+        }
+    </style>
+    <main>
+
+        <body>
             <nav>
                 <a href="index.html">home</a>
                 <a href="about.html">about us</a>
@@ -20,20 +69,93 @@
                 <a href="https://www.facebook.com/" target="_blank">facebook</a>
                 <a href="https://www.youtube.com/" target="_blank">youtube</a>
             </nav>
-
-
-            <marquee bgcolor=pink direction="right" height="70px">
-                <h1>This is index page</h1>
+            <marquee bgcolor=brown direction="right" height="70px" />
+            <h1 class="t_shadow">This is my index page</h1>
             </marquee>
-            <img src="images/hotelname.jpeg" alt="hotelname">
+            <!-- silder start -->
+            <section>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/hotelnew1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/table2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/food2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bed2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>fourth slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Slider End -->
+
+            <p class="f_family2 para1">Hotel services include a wide range of offerings to enhance the guest experience,
+                from basic
+                accommodation
+                and housekeeping to amenities like dining, Wi-Fi, concierge, and specialized services like spas and
+                laundry.
+                These services aim to provide comfort, convenience, and a positive stay, and can be both tangible (like
+                in-room amenities) and intangible<br>
 
 
-            <p>Hotel services include a wide range of offerings to enhance the guest experience, from basic
-                accommodation and housekeeping to amenities like dining, Wi-Fi, concierge, and specialized services like
-                spas and laundry. These services aim to provide comfort, convenience, and a positive stay, and can be
-                both tangible (like in-room amenities) and intangible</p>
+                1.Guest Relations: Check-in/out, luggage handling, information, problem resolution, personalized
+                greetings.<br>
+               2. Housekeeping: Room cleaning, linen changes, amenity replenishment, maintenance.<br>
+                3.Food & Beverage (F&B): Room service, on-site restaurants, bars, catering.<br>
+                4.Concierge: Local recommendations, tour/transport bookings, reservations.<br>
+               5. Amenities: Fitness centers, pools, spas, business centers, Wi-Fi.<br>
+                6.Transportation: Airport transfers, shuttle services, taxi arrangements.<br>
+                7.In-Room: Laundry, minibar, special requests, maintenance.
+            </p>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
 
 
-    </body>
+        </body>
+
 
     </html>
